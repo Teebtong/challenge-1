@@ -4,12 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import BlogPostItem from '../BlogPostItem';
 
 // We need to wrap with BrowserRouter because BlogPostItem uses Link
-const renderWithRouter = (ui) => {
-  return render(
-    <BrowserRouter>
-      {ui}
-    </BrowserRouter>
-  );
+const renderWithRouter = ui => {
+  return render(<BrowserRouter>{ui}</BrowserRouter>);
 };
 
 describe('BlogPostItem', () => {
@@ -19,7 +15,7 @@ describe('BlogPostItem', () => {
       title: 'Test Blog Post',
       url: '/posts/1',
       summary: 'This is a test summary',
-      date: '2023-01-01'
+      date: '2023-01-01',
     };
 
     // Act
@@ -28,4 +24,4 @@ describe('BlogPostItem', () => {
     // Assert
     expect(screen.getByText('Test Blog Post')).toBeInTheDocument();
   });
-}); 
+});

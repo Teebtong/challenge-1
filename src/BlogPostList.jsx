@@ -8,7 +8,7 @@ const BlogPostList = ({ posts = [] }) => {
 
   return (
     <div className={styles.blogPostList}>
-      {posts.map((post) => (
+      {posts.map(post => (
         <BlogPostItem
           key={post.id}
           id={post.id}
@@ -22,4 +22,4 @@ const BlogPostList = ({ posts = [] }) => {
   );
 };
 
-export default BlogPostList; 
+export default BlogPostList;

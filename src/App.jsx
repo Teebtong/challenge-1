@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import BlogPostList from './BlogPostList.jsx';
 
 const samplePosts = [
@@ -22,17 +22,16 @@ const samplePosts = [
     summary: 'Tips for making your web applications more accessible.',
     date: '2023-03-10',
     url: '/posts/3',
-  }
+  },
 ];
 
 function App() {
-
   return (
     <>
       <h1>Blog Posts</h1>
       <BlogPostList posts={typeof samplePosts !== 'undefined' ? samplePosts : []} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
