@@ -22,7 +22,7 @@ const samplePosts = [
     summary: 'Tips for making your web applications more accessible.',
     date: '2023-03-10',
     url: '/posts/3',
-  },
+  }
 ];
 
 function App() {
